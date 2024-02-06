@@ -20,7 +20,7 @@ int m;
 
 vector<int>cipherText;
    
-    
+   
 cipherText.append(1400); cipherText.append(2218); cipherText.append(99);
 cipherText.append(2088); cipherText.append(4191); cipherText.append(84);
 cipherText.append(843); cipherText.append(99); cipherText.append(4191);
@@ -63,3 +63,27 @@ cipherText.append(2979); cipherText.append(99); cipherText.append(871); cipherTe
 cipherText.append(3780); cipherText.append(843); cipherText.append(1032); cipherText.append(2088 );
 cipherText.append(1443); cipherText.append(2962); cipherText.append(843); cipherText.append(2916 );
 cipherText.append(1400);
+
+cin>>e;
+
+cin>>n;
+
+cin>>m;
+
+if(e! = 7 || n != 4453){
+    cout << "Public key is not valid!"<< endl;
+}
+else{
+    cout << "p = 60" << endl;
+    cout << "p = 72" << endl;
+    cout << "phi(n) = 4320" << endl;
+    cout << "d = 3703" << endl;
+}
+
+int message;
+for(i = 0, i < cipherText.size(); ++i){
+    message = cipherText.at(i);
+    
+}
+
+
