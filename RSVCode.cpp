@@ -11,6 +11,7 @@
 
 
 #include <iostream>
+#include <cmath>
 
 using namespace std;
 
@@ -22,48 +23,48 @@ int main(){
     vector<int>cipherText;
     
     
-    cipherText.append(1400); cipherText.append(2218); cipherText.append(99);
-    cipherText.append(2088); cipherText.append(4191); cipherText.append(84);
-    cipherText.append(843); cipherText.append(99); cipherText.append(4191);
-    cipherText.append(3780); cipherText.append(764); cipherText.append(4191);
-    cipherText.append(2979); cipherText.append(2269); cipherText.append(99);
-    cipherText.append(764); cipherText.append(2218); cipherText.append(2269); cipherText.append(2088);
-    cipherText.append(843); cipherText.append(3015); cipherText.append(99); cipherText.append(2970);
-    cipherText.append(1443); cipherText.append(1655); cipherText.append(99); cipherText.append(3237);
-    cipherText.append(2979); cipherText.append(99); cipherText.append(447); cipherText.append(1443);
-    cipherText.append(3237); cipherText.append(1032); cipherText.append(2382); cipherText.append(871);
-    cipherText.append(843); cipherText.append(1655); cipherText.append(99); cipherText.append(871);
-    cipherText.append(1443); cipherText.append(99); cipherText.append(4242);
-    cipherText.append(843); cipherText.append(99); cipherText.append(4191); cipherText.append(2269 );
-    cipherText.append(99); cipherText.append(843); cipherText.append(4191); cipherText.append(2269 );
-    cipherText.append(2979); cipherText.append(99); cipherText.append(871); cipherText.append(1443 );
-    cipherText.append(99); cipherText.append(2382); cipherText.append(2269); cipherText.append(843); 
-    cipherText.append(99); cipherText.append(4191); cipherText.append(2269); cipherText.append(99);
-    cipherText.append(99); cipherText.append(3237); cipherText.append(2979); cipherText.append(99); 
-    cipherText.append(871); cipherText.append(843); cipherText.append(3780); cipherText.append(843 );
-    cipherText.append(1032); cipherText.append(2088); cipherText.append(1443); cipherText.append(2962 );
-    cipherText.append(843); cipherText.append(2916); cipherText.append(99); cipherText.append(3237 );
-    cipherText.append(2979); cipherText.append(99); cipherText.append(764); cipherText.append(2218 );
-    cipherText.append(2269); cipherText.append(2088); cipherText.append(99); cipherText.append(2088 );
-    cipherText.append(4191); cipherText.append(2269); cipherText.append(99); cipherText.append(447 );
-    cipherText.append(1443); cipherText.append(3237); cipherText.append(843); cipherText.append(99 );
-    cipherText.append(871); cipherText.append(1655); cipherText.append(2382); cipherText.append(843 );
-    cipherText.append(99); cipherText.append(4242); cipherText.append(843); cipherText.append(447 );
-    cipherText.append(4191); cipherText.append(2382); cipherText.append(2269); cipherText.append(843 );
-    cipherText.append(99); cipherText.append(2218); cipherText.append(99); cipherText.append(447 );
-    cipherText.append(4191); cipherText.append(2962); cipherText.append(99); cipherText.append(2962 );
-    cipherText.append(1443); cipherText.append(99); cipherText.append(3780); cipherText.append(1443 );
-    cipherText.append(2962); cipherText.append(1294); cipherText.append(843); cipherText.append(1655 );
-    cipherText.append(99); cipherText.append(2970); cipherText.append(2218); cipherText.append(1294 );
-    cipherText.append(2382); cipherText.append(1655); cipherText.append(843); cipherText.append(99 );
-    cipherText.append(1443); cipherText.append(2382); cipherText.append(871); cipherText.append(99 );
-    cipherText.append(2088); cipherText.append(1443); cipherText.append(764); cipherText.append(99 );
-    cipherText.append(871); cipherText.append(1443); cipherText.append(99); cipherText.append(2382 );
-    cipherText.append(2269); cipherText.append(843); cipherText.append(99); cipherText.append(3237 );
-    cipherText.append(2979); cipherText.append(99); cipherText.append(871); cipherText.append(843 );
-    cipherText.append(3780); cipherText.append(843); cipherText.append(1032); cipherText.append(2088 );
-    cipherText.append(1443); cipherText.append(2962); cipherText.append(843); cipherText.append(2916 );
-    cipherText.append(1400);
+    cipherText.push_back(1400); cipherText.push_back(2218); cipherText.push_back(99);
+    cipherText.push_back(2088); cipherText.push_back(4191); cipherText.push_back(84);
+    cipherText.push_back(843); cipherText.push_back(99); cipherText.push_back(4191);
+    cipherText.push_back(3780); cipherText.push_back(764); cipherText.push_back(4191);
+    cipherText.push_back(2979); cipherText.push_back(2269); cipherText.push_back(99);
+    cipherText.push_back(764); cipherText.push_back(2218); cipherText.push_back(2269); cipherText.push_back(2088);
+    cipherText.push_back(843); cipherText.push_back(3015); cipherText.push_back(99); cipherText.push_back(2970);
+    cipherText.push_back(1443); cipherText.push_back(1655); cipherText.push_back(99); cipherText.push_back(3237);
+    cipherText.push_back(2979); cipherText.push_back(99); cipherText.push_back(447); cipherText.push_back(1443);
+    cipherText.push_back(3237); cipherText.push_back(1032); cipherText.push_back(2382); cipherText.push_back(871);
+    cipherText.push_back(843); cipherText.push_back(1655); cipherText.push_back(99); cipherText.push_back(871);
+    cipherText.push_back(1443); cipherText.push_back(99); cipherText.push_back(4242);
+    cipherText.push_back(843); cipherText.push_back(99); cipherText.push_back(4191); cipherText.push_back(2269 );
+    cipherText.push_back(99); cipherText.push_back(843); cipherText.push_back(4191); cipherText.push_back(2269 );
+    cipherText.push_back(2979); cipherText.push_back(99); cipherText.push_back(871); cipherText.push_back(1443 );
+    cipherText.push_back(99); cipherText.push_back(2382); cipherText.push_back(2269); cipherText.push_back(843); 
+    cipherText.push_back(99); cipherText.push_back(4191); cipherText.push_back(2269); cipherText.push_back(99);
+    cipherText.push_back(99); cipherText.push_back(3237); cipherText.push_back(2979); cipherText.push_back(99); 
+    cipherText.push_back(871); cipherText.push_back(843); cipherText.push_back(3780); cipherText.push_back(843 );
+    cipherText.push_back(1032); cipherText.push_back(2088); cipherText.push_back(1443); cipherText.push_back(2962 );
+    cipherText.push_back(843); cipherText.push_back(2916); cipherText.push_back(99); cipherText.push_back(3237 );
+    cipherText.push_back(2979); cipherText.push_back(99); cipherText.push_back(764); cipherText.push_back(2218 );
+    cipherText.push_back(2269); cipherText.push_back(2088); cipherText.push_back(99); cipherText.push_back(2088 );
+    cipherText.push_back(4191); cipherText.push_back(2269); cipherText.push_back(99); cipherText.push_back(447 );
+    cipherText.push_back(1443); cipherText.push_back(3237); cipherText.push_back(843); cipherText.push_back(99 );
+    cipherText.push_back(871); cipherText.push_back(1655); cipherText.push_back(2382); cipherText.push_back(843 );
+    cipherText.push_back(99); cipherText.push_back(4242); cipherText.push_back(843); cipherText.push_back(447 );
+    cipherText.push_back(4191); cipherText.push_back(2382); cipherText.push_back(2269); cipherText.push_back(843 );
+    cipherText.push_back(99); cipherText.push_back(2218); cipherText.push_back(99); cipherText.push_back(447 );
+    cipherText.push_back(4191); cipherText.push_back(2962); cipherText.push_back(99); cipherText.push_back(2962 );
+    cipherText.push_back(1443); cipherText.push_back(99); cipherText.push_back(3780); cipherText.push_back(1443 );
+    cipherText.push_back(2962); cipherText.push_back(1294); cipherText.push_back(843); cipherText.push_back(1655 );
+    cipherText.push_back(99); cipherText.push_back(2970); cipherText.push_back(2218); cipherText.push_back(1294 );
+    cipherText.push_back(2382); cipherText.push_back(1655); cipherText.push_back(843); cipherText.push_back(99 );
+    cipherText.push_back(1443); cipherText.push_back(2382); cipherText.push_back(871); cipherText.push_back(99 );
+    cipherText.push_back(2088); cipherText.push_back(1443); cipherText.push_back(764); cipherText.push_back(99 );
+    cipherText.push_back(871); cipherText.push_back(1443); cipherText.push_back(99); cipherText.push_back(2382 );
+    cipherText.push_back(2269); cipherText.push_back(843); cipherText.push_back(99); cipherText.push_back(3237 );
+    cipherText.push_back(2979); cipherText.push_back(99); cipherText.push_back(871); cipherText.push_back(843 );
+    cipherText.push_back(3780); cipherText.push_back(843); cipherText.push_back(1032); cipherText.push_back(2088 );
+    cipherText.push_back(1443); cipherText.push_back(2962); cipherText.push_back(843); cipherText.push_back(2916 );
+    cipherText.push_back(1400);
 
     cin>>e;
 
@@ -71,93 +72,93 @@ int main(){
 
     cin>>m;
 
-    if(e! = 7 || n != 4453){
+    if(e != 7 || n != 4453){
         cout << "Public key is not valid!"<< endl;
     }
     else{
-        cout << "p = 60" << endl;
-        cout << "p = 72" << endl;
-        cout << "phi(n) = 4320" << endl;
-        cout << "d = 3703" << endl;
+        cout << "p == 60" << endl;
+        cout << "p == 72" << endl;
+        cout << "phi(n) == 4320" << endl;
+        cout << "d == 3703" << endl;
     }
 
     int num;
-    int message;
-
-    for(i = 0, i < cipherText.size(); ++i){
+    double message;
+    unsigned i;
+    for(i = 0; i < cipherText.size(); ++i){
         num = cipherText.at(i);
-        message = 
+        message = pow(num,3707)%4453;
 
-        if (message = 7){
+        if (message == 7){
             cout << "a" << endl;
         }
-        else if (message = 8){
+        else if (message == 8){
             cout << "b" << endl;
         }
-        else if (message = 9){
+        else if (message == 9){
             cout << "c" << endl;
         }
-        else if (message = 10){
+        else if (message == 10){
             cout << "d" << endl;
         }
-        else if (message = 11){
+        else if (message == 11){
             cout << "e" << endl;
         }
-        else if (message = 12){
+        else if (message == 12){
             cout << "f" << endl;
         }
-        else if (message = 13){
+        else if (message == 13){
             cout << "g" << endl;
         }
-        else if (message = 14){
+        else if (message == 14){
             cout << "h" << endl;
         }
-        else if (message = 15){
+        else if (message == 15){
             cout << "i" << endl;
         }
-        else if (message = 16){
+        else if (message == 16){
             cout << "j" << endl;
-        }else if (message = 17){
+        }else if (message == 17){
             cout << "k" << endl;
-        }else if (message = 18){
+        }else if (message == 18){
             cout << "l" << endl;
-        }else if (message = 19){
+        }else if (message == 19){
             cout << "m" << endl;
-        }else if (message = 20){
+        }else if (message == 20){
             cout << "n" << endl;
-        }else if (message = 21){
+        }else if (message == 21){
             cout << "o" << endl;
-        }else if (message = 22){
+        }else if (message == 22){
             cout << "p" << endl;
-        }else if (message = 23){
+        }else if (message == 23){
             cout << "q" << endl;
-        }else if (message = 24){
+        }else if (message == 24){
             cout << "r" << endl;
-        }else if (message = 25){
+        }else if (message == 25){
             cout << "s" << endl;
-        }else if (message = 26){
+        }else if (message == 26){
             cout << "t" << endl;
-        }else if (message = 27){
+        }else if (message == 27){
             cout << "u" << endl;
-        }else if (message = 28){
+        }else if (message == 28){
             cout << "v" << endl;
-        }else if (message = 29){
+        }else if (message == 29){
             cout << "w" << endl;
-        }else if (message = 30){
+        }else if (message == 30){
             cout << "x" << endl;
-        }else if (message = 31){
+        }else if (message == 31){
             cout << "y" << endl;
-        }else if (message = 32){
+        }else if (message == 32){
             cout << "z" << endl;
-        }else if (message = 33){
+        }else if (message == 33){
             cout << " " << endl;
-        }else if (message = 34){
+        }else if (message == 34){
             cout << "\"" << endl;
-        }else if (message = 35){
+        }else if (message == 35){
             cout << "," << endl;
-        }else if (message = 36){
+        }else if (message == 36){
             cout << "." << endl;
-        }else if (message = 37){
+        }else if (message == 37){
             cout << "'" << endl;
         }
     }
