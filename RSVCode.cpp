@@ -11,7 +11,7 @@
 
 
 #include <iostream>
-#include <cmath>
+#include <math.h>
 
 using namespace std;
 
@@ -82,12 +82,12 @@ int main(){
         cout << "d == 3703" << endl;
     }
 
-    int num;
-    double message;
-    unsigned i;
-    for(i = 0; i < cipherText.size(); ++i){
-        num = cipherText.at(i);
-        message = pow(num,3707)%4453;
+    int num = 2218;
+    //int message;
+    //unsigned i;
+    //for(i = 0; i < cipherText.size(); ++i){
+        //num = cipherText.at(i);
+    int message = pow(num,3707) % 4453;
 
         if (message == 7){
             cout << "a" << endl;
